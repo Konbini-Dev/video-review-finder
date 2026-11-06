@@ -1,0 +1,87 @@
+<!doctype html>
+<!-- Copyright (c) 2026 Konbini Dev. All rights reserved. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Review Finder: Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #ffffff; --text: #1f2937; --muted: #4b5563; --accent: #4f46e5; --line: #e5e7eb; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0f172a; --text: #e5e7eb; --muted: #9ca3af; --accent: #818cf8; --line: #1f2937; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+    h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+    h2 { font-size: 19px; margin: 32px 0 8px; }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    a { color: var(--accent); }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 15px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+    th { color: var(--text); }
+    td { color: var(--muted); }
+    .meta { color: var(--muted); margin: 0 0 24px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Video Review Finder: Privacy Policy</h1>
+  <p class="meta"><strong>Effective date:</strong> November 6, 2026</p>
+
+  <p>Video Review Finder ("the extension") is operated by Konbini Dev ("we", "us"). This policy explains what the extension collects, why, and who it is shared with. Contact: <a href="mailto:kadokonbini@gmail.com">kadokonbini@gmail.com</a>.</p>
+
+  <h2>What the extension does</h2>
+  <p>When you click its button on an amazon.com product page, the extension finds YouTube review videos for that product and shows them in a panel on the page.</p>
+
+  <h2>Information we collect</h2>
+  <p><strong>Product information from the page you are viewing.</strong> When you click the review button on an Amazon product detail page, the extension reads from that page the product ID (ASIN), the product title and the brand, plus, when the product comes in several versions, Amazon's ID for the product family and the options selected on the page (for example color "Black" and size "Medium"). It sends them to our server to look up matching videos. The family ID and options let different colors and sizes of the same product share one set of videos. Nothing is sent unless you click. This happens only on Amazon product detail pages, never on other websites.</p>
+  <p><strong>Technical request data.</strong> Like any website or app that talks to a server, each lookup necessarily reaches our server from your IP address, along with your browser's user-agent string and the request address (which contains the product information above). We use these only to answer that request. We do not store your IP address or location: request logging is turned off for our server, and the extension never reads your GPS or device location.</p>
+  <p><strong>Abuse protection.</strong> To stop any one connection from overusing the service, our server counts lookups per connection for one hour. It counts them under a scrambled, one-way code made from your IP address, never the address itself, and each count is deleted after an hour. We also keep a single daily total of searches, which contains nothing about you.</p>
+  <p><strong>What we do not collect.</strong> We do not collect your name, email address, Amazon account details, orders, cart, payment information, or your activity on any other website. The extension has no user accounts. It does not use third-party analytics or advertising trackers and sets no cookies.</p>
+
+  <h2>Information we store</h2>
+  <ul>
+    <li><strong>Product and video records.</strong> We save the product ID, title, brand and product family, together with the public details of matching YouTube videos (video ID, title, channel name, description, publish date, length). These records describe products and videos. They are not linked to you, your IP address or your device. Video details from YouTube are refreshed or deleted within 30 days.</li>
+    <li><strong>Lookup counts.</strong> We count how many times each product is looked up each day. These totals are not linked to you and are used only to run and improve the extension, for example to find products that don't have video reviews yet.</li>
+    <li><strong>Cached results.</strong> We keep a copy of each product's search results for up to 7 days so repeat lookups are faster.</li>
+    <li><strong>On your device.</strong> The extension uses Chrome's local extension storage for two things: a record that you accepted this policy (its version and the date), and an optional developer setting (a custom server address). Nothing about your browsing is stored there.</li>
+  </ul>
+
+  <h2>How information is shared</h2>
+  <p>We do not sell, rent or trade any information. We share it only with the service providers that run the extension:</p>
+  <table>
+    <thead><tr><th>Provider</th><th>What it receives</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Google Cloud (Cloud Run)</td><td>Lookup requests (not stored)</td><td>Hosts our server</td></tr>
+      <tr><td>Supabase</td><td>Product and video records, and daily lookup counts</td><td>Database</td></tr>
+      <tr><td>Upstash</td><td>Cached search results</td><td>Faster repeat lookups</td></tr>
+      <tr><td>YouTube API Services (Google)</td><td>A search phrase built from the product title and brand</td><td>Finds review videos</td></tr>
+    </tbody>
+  </table>
+  <p>We may also disclose information if the law requires it.</p>
+
+  <h2>YouTube</h2>
+  <p>The extension uses YouTube API Services. By using the extension, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="https://www.google.com/policies/privacy">Google Privacy Policy</a>. When the panel shows a video, the YouTube player loads from youtube.com. Even before you press play, it shares some basic data with YouTube to show the thumbnail and title and to prevent abuse, and more when you play the video. YouTube and Google may also set cookies under their own policies. Videos marked Made for Kids are not shown. Before first use, the extension asks you to accept this policy and the YouTube Terms of Service.</p>
+
+  <h2>Amazon</h2>
+  <p>The extension contains no affiliate, referral or advertising links, and we earn nothing from purchases you make on Amazon. Video Review Finder is not affiliated with or endorsed by Amazon or YouTube.</p>
+
+  <h2>Support link</h2>
+  <p>The extension's toolbar menu, welcome page and review panel footer may show an optional link to support its development. It opens a third-party payment site in a new tab. Anything you give there is handled by that site under its own terms and privacy policy; the extension does not see or receive your payment details, and every feature works the same whether or not you use it.</p>
+
+  <h2>Chrome Web Store Limited Use</h2>
+  <p>The use of information received through the extension adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. We use the data only to provide the extension's single purpose: finding review videos for the product you are viewing.</p>
+
+  <h2>Security</h2>
+  <p>All traffic between the extension and our server is encrypted with HTTPS. Access to our databases and hosting accounts is restricted.</p>
+
+  <h2>Children</h2>
+  <p>The extension is not directed to children under 13, and we do not knowingly collect information from them.</p>
+
+  <h2>Your choices</h2>
+  <p>You can stop all collection at any time by disabling or removing the extension. Because we do not keep information tied to you, there is usually nothing to delete. To request deletion of anything related to you, email <a href="mailto:kadokonbini@gmail.com">kadokonbini@gmail.com</a>; we respond within 7 days. Deleting data we hold does not affect data stored by YouTube; to delete data on YouTube, use YouTube's own tools.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we will update it here and change the effective date above. If a change affects what the extension collects, the extension will ask you to accept the new policy before its next lookup.</p>
+</main>
+</body>
+</html>
